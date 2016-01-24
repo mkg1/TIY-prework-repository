@@ -1,0 +1,19 @@
+def pizza(n)
+  counter = 1
+    while counter == 1
+         puts "What is the first topping would you like?"
+         topping = gets.chomp
+         puts "Great! " + topping + " will be added to your pizza!"
+        counter = counter + 1
+    end
+    while counter > 1 && counter <= n
+        puts "What else would you like to add?"
+        topping = gets.chomp
+        puts "Great! " + topping + " will also be added to your pizza!"
+        counter = counter + 1
+    end
+end
+
+puts "how many toppings would you like on your pizza?"
+number = gets.chomp.to_i
+pizza(number)
